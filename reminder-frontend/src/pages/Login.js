@@ -19,7 +19,7 @@ export default function Login() {
       alert("Login successful!");
       navigate("/reminders"); // redirect to reminders page
     } catch (err) {
-      console.error(err.response);
+      console.error(err.response.data);
       setError("Login failed. Check username/password.");
     } finally {
       setLoading(false);

@@ -48,8 +48,9 @@ class RegisterSerializer(serializers.ModelSerializer):
 class Reminderserializers(serializers.ModelSerializer):
     class Meta:
         model = Reminder
-        fields =  '__all__'  #['id', 'user', 'title', 'description', 'remind_at', 'created_at', 'updated_at']
-        read_only_fields = ['id', 'created_at', 'updated_at']  
+        fields = ['id', 'user', 'title', 'description', 'remind_at', 'created_at', 'updated_at']
+        read_only_fields = ['id', 'user', 'created_at', 'updated_at']
+
 
 
 

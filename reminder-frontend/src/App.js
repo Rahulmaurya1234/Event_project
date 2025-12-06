@@ -1,18 +1,17 @@
-// src/App.js
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Register from "./Register";
-import Login from "./Login";
-import Reminders from "./Reminders";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Home from "./pages/reminders";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/reminder/reminders" element={<Reminders />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/reminders" element={<Home />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
