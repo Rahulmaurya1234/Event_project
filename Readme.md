@@ -41,43 +41,47 @@ Real-time updates without page reload
 Proper backend–frontend integration
 
 # Project Structure
-<h1>
 reminder-app/
 │
 ├── backend/
 │   ├── manage.py
-├.  ├── core
+│   ├── core/
 │   │   ├── models.py
 │   │   ├── settings.py
 │   │   ├── celery.py
 │   │   ├── urls.py
 │   │   └── wsgi.py
+│   │
 │   ├── reminder/
 │   │   ├── models.py
 │   │   ├── serializers.py
 │   │   ├── views.py
 │   │   ├── urls.py
-│   │   └── settings.py
+│   │   ├── settings.py
 │   │   └── tasks.py
-│       └──admin.py
+│   │
+│   └── admin.py
 │
 └── reminder-frontend/
     ├── src/
     │   ├── components/
-    │   │     └──Footer.jsx
-    │   │     └──Navbar.jsx   
-    │   │ 
+    │   │   ├── Footer.jsx
+    │   │   └── Navbar.jsx
+    │   │
     │   ├── pages/
-    │        └── Home.jsx        
-    |        └── login.jsx
-    |        └── register.jsx
-    |        └── reminder.jsx
-    ├── App.js
-    ├── App.css
-    ├── index.js
+    │   │   ├── Home.jsx
+    │   │   ├── Login.jsx
+    │   │   ├── Register.jsx
+    │   │   └── Reminder.jsx
+    │   │
+    │   ├── App.js
+    │   ├── App.css
+    │   └── index.js
+    │
     ├── public/
     └── package.json
-    </h1>
+
+    
 
 # How to Run the Project
 # Backend
