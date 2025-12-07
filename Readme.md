@@ -41,6 +41,7 @@ Real-time updates without page reload
 Proper backend–frontend integration
 
 # Project Structure
+<h1>
 reminder-app/
 │
 ├── backend/
@@ -76,6 +77,7 @@ reminder-app/
     ├── index.js
     ├── public/
     └── package.json
+    </h1>
 
 # How to Run the Project
 # Backend
